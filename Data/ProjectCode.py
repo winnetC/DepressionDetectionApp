@@ -205,7 +205,7 @@ def main():
     activity=st.selectbox("Activity",submenu)
     if activity == "Plot":
         st.subheader("Data Vis Plot")
-        dataF=pd.read_csv('UserlistB.csv')
+        dataF=pd.read_csv('Data/UserlistB.csv')
         st.dataframe(dataF.head(10))
         dataF['Depression_level'].value_counts().plot(kind='bar')
         st.set_option('deprecation.showPyplotGlobalUse', False)
