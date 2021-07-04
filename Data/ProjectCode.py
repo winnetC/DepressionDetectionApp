@@ -132,7 +132,7 @@ def RForestClassifier():
   rnd_clf.fit(Xtrain,Ytrain)
   return rnd_clf
 
-depressionDf = pd.read_csv('UserlistB.csv')
+depressionDf = pd.read_csv('Data/UserlistB.csv')
 depressionDf['Depression_level'],_ = pd.factorize(depressionDf['Depression_level'])
 # print(depressionDf.head(10))
 X=depressionDf.drop(['Depression_level','Username'],axis=1)
